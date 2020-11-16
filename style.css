@@ -23,8 +23,9 @@ article {
 
 
 header {
-    color: skyblue;
+    color: red;
     text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 
