@@ -11,7 +11,6 @@ html, body {
     padding: 0;
     background-color: #333333;  
     color: white;
-    margin: 0px;
     font-family: 'Texturina', serif;
 }
 
@@ -47,6 +46,7 @@ footer {
   border-color: darkred;
 }
 
+/* navigatiebalk anchor links en tekst */
 .navigatie a {
   padding: 6px 6px 6px 32px;
   text-decoration: none;
@@ -58,10 +58,13 @@ footer {
 
 }
 
+/* navigatiebalk anchor links en tekst als je erover heen gaat met je cursor*/
 .navigatie a:hover {
   transform: scale(1.1);
   color: black;
 }
+
+/* navigatiebalk logo */
 
 #nlogo {
   width: 120px;
@@ -72,13 +75,15 @@ footer {
   
 }
 
+/* navigatiebalk logo als je erover heen gaat*/
 #nlogo:hover {
   transform: scale(1.5);
 }
 
+/* footer */
 footer {
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   background-color: #f53131;
   color: white;
   width:100%;
@@ -87,113 +92,138 @@ footer {
  font-family: 'Comfortaa', cursive;
 }
 
+
+/* h1 tags */
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
 
-p {
+/* p tag die wordt gebruikt bij index.html */
+p.home {
   text-align: center;
+  margin: 40px;
+  font-size: 18px;
   font-family: 'Comfortaa', cursive;
 }
 
+
+/* p tag text bij de bedankt.html */
+.bedankt {
+    text-align: center;
+  margin: 40px;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+/* als je over de footer heen gaat met je cursor */
 footer p:hover {
   color: #333333;
 }
 
+
+/* footer tekst onder Jimmy Tran */
 p.smalltext {
   font-size: 10px;
 }
 
-div h1 p {
-  margin: 300px;
+
+
+/* p tag met class faq tekst styling */
+.faq {
+    text-align: center;
+  margin: 40px;
+  font-family: 'Comfortaa', cursive;
 }
 
+
+/* ervaring horizontale bars styling */
 .container {
-  margin: 10px;
+  width: 50%;
+  background-color: #333333;
+  margin-left: 30%;
 }
 
-form {
-  text-align: center;
+.skills {
+  text-align: right;
+  margin-left: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: 'Comfortaa';
 }
 
+.html {
+  width: 70%; 
+  background-color: #f53131;
+  margin-left: 20%;
+  }
+.css {
+  width: 55%; 
+  margin-left: 20%; 
+  background-color: #f53131;
+  }
+.phs {
+width: 78%;  
+margin-left: 20%; 
+background-color: #f53131;
+}
+
+.ps, .ht, .cs{
+  margin-left: 40%;
+}
+
+/* input tag styling */
 input {
-
   border-style: none none solid none;
   border-color: #f53131;
   background-color: #333333;
   color: white;
+  caret-color: f53131;
   padding: 10px;
   font-family: font-family, 'Roboto Mono', monospace;
   outline: none;
   font-size: 14pt;
-  width: 200px;
+  width: 300px;
+  text-align: center;
 }
-
-.waarschuwing {
-  background-color: #f53131;
+/* knop bij de Contactus.html */
+.button {
+  background-color: red;
+  border: none;
   color: white;
-  font-family: Roboto Mono;
-  padding: 2px;
-
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.mainlogo {
-  height: 200px;
-  margin-left: 50%;
+/* form tag styling */
+form {
+  font-size: 30px;
+  font-family: 'Rubik';
+  text-align: center;
 }
+
 
 #text {
   align-items: center;
 }
 
-.containur {
-        position:relative;
-        height:37px;
-        background-color:#accb32;
-        width: auto;
-}
 
 h1 {
   font-family: sans-serif;
   color: white;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  background-color: #f53131;
-  font-family: arial;
-}
-
-.price {
-  color: white;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #ff504a;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-
 #faq {
   color: #f53131;
 }
 
-/* responsive css */
+/* responsive css wanneer de scherm width 600px is */
 @media screen and (max-width: 600px) {
 .navigatie {
   font-family: 'Rubik', sans-serif;
@@ -228,7 +258,7 @@ h1 {
   color: black;
 }
 
-/* Navigatie logo */
+/* Navigatie logo + Hover over de navigatie logo */
 
 #nlogo {
   width: 100px;
