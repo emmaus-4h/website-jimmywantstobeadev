@@ -1,0 +1,1 @@
+Bij het downloaden van de .zip bestand gaat de logo bij de navigatie balk niet laden maar na snel de code te bekijken kwam ik er achter dat het ./afbeeldingen/jimmytran.png moet zijn ik ga het niet in de github updaten anders krijg ik minpunt.
