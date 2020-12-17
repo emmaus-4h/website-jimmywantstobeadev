@@ -223,6 +223,20 @@ h1 {
   color: #f53131;
 }
 
+/* footer anchorlink */
+
+.aft {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.aft:hover {
+  text-decoration: none;
+  color: black;
+  
+}
 /* responsive css wanneer de scherm width 600px is */
 @media screen and (max-width: 600px) {
 .navigatie {
@@ -272,8 +286,23 @@ h1 {
 #nlogo:hover {
   transform: scale(1.5);
 }
+/* footer weghalen als de beeldscherm kleiner is */
 footer {
   display: none;
 }
+/* footer anchor link weghalen als de beeldscherm kleiner is */
+.aft {
+  display: none;
+}
+
+/* de p tag met  class home tekst verkleinen als de beeldscherm kleiner is.*/
+
+p.home {
+  text-align: center;
+  margin: 40px;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+}
+
 
 }
