@@ -1,21 +1,19 @@
 /* Basislayout */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 0;
     background-color: #333333;  
-    
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    font-family: 'Texturina', serif;
 }
-
-
-main {
-    margin: 0 auto;
-    width: 700px;
-    position: relative;
-}
-
 
 header {
     color: red;
@@ -23,6 +21,9 @@ header {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
+main {
+  margin-left: 200px;
+}
 
 footer {
     text-align: center;
@@ -30,62 +31,60 @@ footer {
 }
 
 
-/* specifieke stijlen */
-
-img.zweefLinks {
-    float: left;
-    margin-right: 15px;
-}
-
-a {
-    color: skyblue;
-    text-decoration: none;
-}
-
-
 
 /* navigatiebalk */
-nav ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    background-color: #f53131;
-    overflow: hidden;
+.navigatie {
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f53131;
+  padding-top: 210px;
+    border-style: none none none solid;
+  border-width: 7px;
+  border-color: darkred;
 }
 
-nav ul li {
-  text-align: center;
+.navigatie a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: transform 0.4s;
+  margin-right: 10%;
+
 }
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 18px 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
+.navigatie a:hover {
+  transform: scale(1.1);
+  color: black;
 }
 
-nav ul li:hover {
-    background-color: #ff5e4f;
-    text-decoration: none;
-}
-
-nav li a:active {
-  background-color: #ff5e4f;
-}
-
-img {
-  width: 90px;
-  height: 90px;
+#nlogo {
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
+  margin-left: 13px;
+  transition: transform .2s;
+  
+}
+
+#nlogo:hover {
+  transform: scale(1.5);
 }
 
 footer {
   text-align: center;
-  padding: 3px;
+  padding: 5px;
   background-color: #f53131;
   color: white;
+  width:100%;
+  position: absolute;
+  bottom: 0px;
+ font-family: 'Comfortaa', cursive;
 }
 
 h1 {
@@ -95,8 +94,156 @@ h1 {
 
 p {
   text-align: center;
+  font-family: 'Comfortaa', cursive;
 }
 
 footer p:hover {
   color: #333333;
+}
+
+p.smalltext {
+  font-size: 10px;
+}
+
+div h1 p {
+  margin: 300px;
+}
+
+.container {
+  margin: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+
+  border-style: none none solid none;
+  border-color: #f53131;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  font-family: font-family, 'Roboto Mono', monospace;
+  outline: none;
+  font-size: 14pt;
+  width: 200px;
+}
+
+.waarschuwing {
+  background-color: #f53131;
+  color: white;
+  font-family: Roboto Mono;
+  padding: 2px;
+
+}
+
+.mainlogo {
+  height: 200px;
+  margin-left: 50%;
+}
+
+#text {
+  align-items: center;
+}
+
+.containur {
+        position:relative;
+        height:37px;
+        background-color:#accb32;
+        width: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #f53131;
+  font-family: arial;
+}
+
+.price {
+  color: white;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #ff504a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+#faq {
+  color: #f53131;
+}
+
+/* responsive css */
+@media screen and (max-width: 600px) {
+.navigatie {
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  width: 190px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f53131;
+  padding-top: 20px;
+    border-style: none none none solid;
+  border-width: 7px;
+  border-color: darkred;
+}
+
+/* css stijl van een anchor tag in de div van navigatie */
+
+.navigatie a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: transform 0.4s;
+
+}
+
+/* Wanneer een persoon met de muis overheen gaat */
+
+.navigatie a:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+/* Navigatie logo */
+
+#nlogo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  transition: transform .2s;
+  
+}
+
+#nlogo:hover {
+  transform: scale(1.5);
+}
+footer {
+  display: none;
+}
+
 }
